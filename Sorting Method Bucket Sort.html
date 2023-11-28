@@ -1,0 +1,40 @@
+
+<html>
+<head>
+    <title>Bucket Sort</title>    
+</head>
+<body>
+  <h1>Bucket Sort</h1>
+  <p>Bucket sort works by dividing the input elements into various groups or buckets. Once the buckets are created, we can sort these buckets individually by using any sorting algorithm, and the most common method is insertion sort. </p>
+  <h2>How Does Bucket Sort Work?</h2>
+  <p>The basic principal of bucket sort is as following:</p>
+  <ol>
+    <li>Creating a set of empty buckets. The number of buckets can be different in different cases.</li>
+    <li>Assign the input array into corresponding bucket base on their range.</li>
+    <li>Sort the elements within each buckets individually.</li>
+    <li>Gather the sorted elements and create a single output array. </li>
+  </ul>
+  <h2>Implementation</h2>
+  <p>Here is an example applying bucket sort:</p>
+  <p>In this example, we will sort the following 106 numbers ranging from 1-1000.</p>
+  <p>239, 512, 389, 742, 135, 811, 957, 653, 471, 628, 64, 382, 305, 141, 713, 483, 10, 556, 896, 273, 923,</p>
+  <p>88, 594, 501, 779, 917, 447, 207, 822, 186, 731, 666, 145, 445, 83, 966, 389, 956, 456, 378, 896, 569,</p>
+  <p>906, 994, 645, 982, 92, 334, 305, 545, 618, 691, 477, 825, 722, 297, 219, 524, 723, 861, 403, 262, 735,</P>
+  <p>708, 774, 432, 791, 521, 816, 663, 774, 137, 24, 284, 689, 358, 751, 771, 883, 902, 792, 584, 953, 778,</p>
+  <p>686, 906, 299, 968, 987, 18, 252, 148, 898, 55, 607, 237, 492, 587, 911, 82, 701, 893, 134, 738, 987, 381</p>
+  <p>we create 10 buckets and run by javascript<br/>
+  <img src="C:\Users\Yoyo\OneDrive\cs1102\javascript.jpg"/>
+  <br/>
+  The output: [10, 18, 24, 55, 64, 82, 83, 88, 92, 134, 135, 137, 141, 145, 148, 186, 207, 219, 237, 239, 252, 262, 273, 284, 297, 299,<br/>
+  305, 305, 334, 358, 378, 381, 382, 389, 389, 403, 432, 445, 447, 456, 471, 477, 483, 492, 501, 512, 521, 524, 545, 556, 569, 584, 587,<br/>
+  594, 607, 618, 628, 645, 653, 663, 666, 686, 689, 691, 701, 708, 713, 722, 723, 731, 735, 738, 742, 751, 771, 774, 774, 778, 779, 791,<br/>
+  792, 811, 816, 822, 825, 861, 883, 893, 895, 896, 898, 902, 906, 906, 911, 917, 923, 953, 956, 957, 966, 968, 982, 987, 987, 994]
+  <br/>
+  </p>
+  <h2>Efficiency of Bucket Sort</h2>
+  <ul>
+    <li>The best case time complexity of bucket sort is O(n+k), where n is the number of the buckets and k is the bucket size. </li>
+    <li>The average case time complexity is O(n) when all elements are randomly distributed in the bucket.</li>
+    <li>The worst case time complexity is O(n^2), which there is only one bucket formed.</li>
+  </ul>
+  <p>Bucket sort is a efficient sorting method when sorting the uniformly distributed input elements.</p>
